@@ -22,7 +22,6 @@ Within a few clicks you can greatly improve the overall tidiness of the place wh
 
 The **Coolector.Services.Medium** is a service responsible for helping with the system deployment by handling the webhooks e.g. from the build servers.
 
-In order to access the available commands, events, DTOs and operation codes make use of the **Coolector.Services.Medium** package.
 
 **Quick start**
 ----------------
