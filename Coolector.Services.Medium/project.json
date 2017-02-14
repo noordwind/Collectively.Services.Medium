@@ -15,7 +15,7 @@
     "Coolector.Common": "1.0.*",
     "Medium": "1.0.0-alpha-2",
     "Medium.Integrations.AspNetCore": "1.0.0-alpha-1",
-    "Medium.Integrations.Lockbox": "1.0.0-alpha-1",
+    "Medium.Integrations.Lockbox": "1.0.0-alpha-2",
     "Medium.Providers.MyGet": "1.0.0-alpha-1",
     "Lockbox.Client": "1.0.0",
     "Exceptionless": "4.0.1922",
