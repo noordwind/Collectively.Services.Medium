@@ -15,6 +15,7 @@ using Medium.Providers.MyGet;
 using Nancy.Owin;
 using NLog.Extensions.Logging;
 using NLog.Web;
+using Medium.Integrations.Lockbox;
 
 namespace Coolector.Services.Medium
 {
@@ -58,7 +59,14 @@ namespace Coolector.Services.Medium
             loggerFactory.AddNLog();
             app.AddNLogWeb();
             env.ConfigureNLog("nlog.config");
-            app.UseMedium();
+            if (env.IsProduction() || env.IsDevelopment())
+            {
+                app.UseMedium(x => x.SettingsLoader = new LockboxMediumSettingsLoader(entryKey: "medium"));
+            }
+            else
+            {
+                app.UseMedium();
+            }
             app.UseOwin().UseNancy(x => x.Bootstrapper = new Bootstrapper(Configuration, Services));
         }
 

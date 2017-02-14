@@ -10,7 +10,7 @@ namespace Coolector.Services.Medium
             WebServiceHost
                 .Create<Startup>(port: 11100)
                 .UseAutofac(Bootstrapper.LifetimeScope)
-                // .UseRabbitMq(queueName: typeof(Program).Namespace)
+                .UseRabbitMq(queueName: typeof(Program).Namespace)
                 .Build()
                 .Run();
         }
