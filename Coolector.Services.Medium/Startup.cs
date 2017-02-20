@@ -11,7 +11,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Medium;
 using Medium.Integrations.AspNetCore;
-using Medium.Providers.MyGet;
 using Nancy.Owin;
 using NLog.Extensions.Logging;
 using NLog.Web;
@@ -44,7 +43,6 @@ namespace Coolector.Services.Medium
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
             services.AddMedium()
-                    .AddMyGetProvider()
                     .AddInMemoryRepository();
 
             //TODO: Somehow Autofac + ASP.NET Core + Nancy doesn't work as expected.    
