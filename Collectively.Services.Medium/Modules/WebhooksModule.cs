@@ -2,7 +2,7 @@ using System.IO;
 using Medium.Services;
 using Nancy;
 
-namespace Coolector.Services.Medium.Modules
+namespace Collectively.Services.Medium.Modules
 {
     public class WebhooksModule : ModuleBase
     {

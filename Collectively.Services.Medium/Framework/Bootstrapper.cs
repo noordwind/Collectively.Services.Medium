@@ -3,20 +3,20 @@ using Microsoft.Extensions.Configuration;
 using Nancy.Bootstrapper;
 using NLog;
 using RawRabbit.Configuration;
-using Coolector.Common.Extensions;
-using Coolector.Common.Mongo;
-using Coolector.Common.Nancy;
-using Coolector.Common.Nancy.Serialization;
-using Coolector.Common.Exceptionless;
-using Coolector.Common.RabbitMq;
-using Coolector.Common.Security;
-using Coolector.Common.Services;
+using Collectively.Common.Extensions;
+using Collectively.Common.Mongo;
+using Collectively.Common.Nancy;
+using Collectively.Common.Nancy.Serialization;
+using Collectively.Common.Exceptionless;
+using Collectively.Common.RabbitMq;
+using Collectively.Common.Security;
+using Collectively.Common.Services;
 using Nancy;
 using Newtonsoft.Json;
 using Autofac.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Coolector.Services.Medium.Framework
+namespace Collectively.Services.Medium.Framework
 {
     public class Bootstrapper : AutofacNancyBootstrapper
     {
@@ -55,7 +55,7 @@ namespace Coolector.Services.Medium.Framework
             pipelines.OnError.AddItemToEndOfPipeline((ctx, ex) =>
             {
                 _exceptionHandler.Handle(ex, ctx.ToExceptionData(),
-                    "Request details", "Coolector", "Service", "Medium");
+                    "Request details", "Collectively", "Service", "Medium");
 
                 return ctx.Response;
             });
@@ -73,7 +73,7 @@ namespace Coolector.Services.Medium.Framework
             };
             pipelines.SetupTokenAuthentication(container);
             _exceptionHandler = container.Resolve<IExceptionHandler>();
-            Logger.Info("Coolector.Services.Medium API has started.");
+            Logger.Info("Collectively.Services.Medium API has started.");
         }
     }
 }

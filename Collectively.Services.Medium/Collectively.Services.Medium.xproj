@@ -7,12 +7,11 @@
 
   <Import Project="$(VSToolsPath)\DotNet\Microsoft.DotNet.Props" Condition="'$(VSToolsPath)' != ''" />
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{6653C6F0-3EC3-434D-8EAB-7B14F84D9E3A}</ProjectGuid>
-    <ProjectTypeGuids>{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}</ProjectTypeGuids>
-    <RootNamespace>Coolector.Services.Medium.Tests</RootNamespace>
+    <ProjectGuid>165c5d3e-c0f3-46a9-a397-3bfe59a82de5</ProjectGuid>
+    <RootNamespace>Collectively.Services.Medium</RootNamespace>
     <BaseIntermediateOutputPath Condition="'$(BaseIntermediateOutputPath)'=='' ">.\obj</BaseIntermediateOutputPath>
     <OutputPath Condition="'$(OutputPath)'=='' ">.\bin\</OutputPath>
-    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
   </PropertyGroup>
 
   <PropertyGroup>

@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-dotnet test ./Coolector.Services.Medium.Tests
+dotnet test ./Collectively.Services.Medium.Tests

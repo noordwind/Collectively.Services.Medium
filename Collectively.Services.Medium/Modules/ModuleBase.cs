@@ -1,8 +1,8 @@
 using AutoMapper;
 using Nancy.Security;
-using Coolector.Common.Nancy;
+using Collectively.Common.Nancy;
 
-namespace Coolector.Services.Medium.Modules
+namespace Collectively.Services.Medium.Modules
 {
     public abstract class ModuleBase : ApiModuleBase
     {

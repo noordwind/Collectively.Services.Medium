@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 
-[assembly: AssemblyTitle("Coolector.Services.Medium.Tests")]
+[assembly: AssemblyTitle("Collectively.Services.Medium")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Coolector.Services.Medium.Tests")]
+[assembly: AssemblyProduct("Collectively.Services.Medium")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -23,4 +23,4 @@ using System.Runtime.InteropServices;
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
 
-[assembly: Guid("6653C6F0-3EC3-434D-8EAB-7B14F84D9E3A")]
+[assembly: Guid("165C5D3E-C0F3-46A9-A397-3BFE59A82DE5")]

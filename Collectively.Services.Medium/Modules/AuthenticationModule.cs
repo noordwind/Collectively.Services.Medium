@@ -1,7 +1,7 @@
-using Coolector.Common.Security;
+using Collectively.Common.Security;
 using Nancy;
 
-namespace Coolector.Services.Medium.Modules
+namespace Collectively.Services.Medium.Modules
 {
     public class AuthenticationModule : ModuleBase
     {

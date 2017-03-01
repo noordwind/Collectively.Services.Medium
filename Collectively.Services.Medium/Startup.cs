@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using Coolector.Services.Medium.Framework;
+using Collectively.Services.Medium.Framework;
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
 using Lockbox.Client.Extensions;
@@ -16,7 +16,7 @@ using NLog.Extensions.Logging;
 using NLog.Web;
 using Medium.Integrations.Lockbox;
 
-namespace Coolector.Services.Medium
+namespace Collectively.Services.Medium
 {
     public class Startup
     {

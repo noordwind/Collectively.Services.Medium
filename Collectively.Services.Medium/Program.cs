@@ -1,7 +1,7 @@
-using Coolector.Common.Host;
-using Coolector.Services.Medium.Framework;
+using Collectively.Common.Host;
+using Collectively.Services.Medium.Framework;
 
-namespace Coolector.Services.Medium
+namespace Collectively.Services.Medium
 {
     public class Program
     {

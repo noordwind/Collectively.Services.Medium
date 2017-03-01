@@ -14,35 +14,35 @@
       "actions": [
         {
           "name": "Build API",
-          "url": "https://api.travis-ci.org/repo/noordwind%2FCoolector.Api/requests"
+          "url": "https://api.travis-ci.org/repo/noordwind%2FCollectively.Api/requests"
         },
         {
           "name": "Build Mailing Service",
-          "url": "https://api.travis-ci.org/repo/noordwind%2FCoolector.Services.Mailing/requests"
+          "url": "https://api.travis-ci.org/repo/noordwind%2FCollectively.Services.Mailing/requests"
         },
         {
           "name": "Build Operations Service",
-          "url": "https://api.travis-ci.org/repo/noordwind%2FCoolector.Services.Operations/requests"
+          "url": "https://api.travis-ci.org/repo/noordwind%2FCollectively.Services.Operations/requests"
         },
         {
           "name": "Build Remarks Service",
-          "url": "https://api.travis-ci.org/repo/noordwind%2FCoolector.Services.Remarks/requests"
+          "url": "https://api.travis-ci.org/repo/noordwind%2FCollectively.Services.Remarks/requests"
         },
         {
           "name": "Build SignalR Service",
-          "url": "https://api.travis-ci.org/repo/noordwind%2FCoolector.Services.SignalR/requests"
+          "url": "https://api.travis-ci.org/repo/noordwind%2FCollectively.Services.SignalR/requests"
         },
         {
           "name": "Build Statistics Service",
-          "url": "https://api.travis-ci.org/repo/noordwind%2FCoolector.Services.Statistics/requests"
+          "url": "https://api.travis-ci.org/repo/noordwind%2FCollectively.Services.Statistics/requests"
         },
         {
           "name": "Build Storage Service",
-          "url": "https://api.travis-ci.org/repo/noordwind%2FCoolector.Services.Storage/requests"
+          "url": "https://api.travis-ci.org/repo/noordwind%2FCollectively.Services.Storage/requests"
         },
         {
           "name": "Build Users Service",
-          "url": "https://api.travis-ci.org/repo/noordwind%2FCoolector.Services.Users/requests"
+          "url": "https://api.travis-ci.org/repo/noordwind%2FCollectively.Services.Users/requests"
         }
       ],
       "triggers": [{
@@ -50,61 +50,61 @@
           "rules": {
             "common": {
               "payload.packageIdentifier": {
-                "value": "Coolector.Common",
+                "value": "Collectively.Common",
                 "comparison": "equals"
               },
               "payload.feedIdentifier": {
-                "value": "coolector",
+                "value": "collectively",
                 "comparison": "equals"
               }
             },
             "mailing-service": {
               "payload.packageIdentifier": {
-                "value": "Coolector.Services.Mailing.Shared",
+                "value": "Collectively.Services.Mailing.Shared",
                 "comparison": "equals"
               },
               "payload.feedIdentifier": {
-                "value": "coolector",
+                "value": "collectively",
                 "comparison": "equals"
               }
             },
             "operations-service": {
               "payload.packageIdentifier": {
-                "value": "Coolector.Services.Operations.Shared",
+                "value": "Collectively.Services.Operations.Shared",
                 "comparison": "equals"
               },
               "payload.feedIdentifier": {
-                "value": "coolector",
+                "value": "collectively",
                 "comparison": "equals"
               }
             },
             "remarks-service": {
               "payload.packageIdentifier": {
-                "value": "Coolector.Services.Remarks.Shared",
+                "value": "Collectively.Services.Remarks.Shared",
                 "comparison": "equals"
               },
               "payload.feedIdentifier": {
-                "value": "coolector",
+                "value": "collectively",
                 "comparison": "equals"
               }
             },
             "statistics-service": {
               "payload.packageIdentifier": {
-                "value": "Coolector.Services.Statistics.Shared",
+                "value": "Collectively.Services.Statistics.Shared",
                 "comparison": "equals"
               },
               "payload.feedIdentifier": {
-                "value": "coolector",
+                "value": "collectively",
                 "comparison": "equals"
               }
             },          
             "users-service": {
               "payload.packageIdentifier": {
-                "value": "Coolector.Services.Users.Shared",
+                "value": "Collectively.Services.Users.Shared",
                 "comparison": "equals"
               },
               "payload.feedIdentifier": {
-                "value": "coolector",
+                "value": "collectively",
                 "comparison": "equals"
               }
             } 
@@ -133,35 +133,35 @@
       "actions": [
         {
           "name": "Build API",
-          "url": "https://api.travis-ci.org/repo/noordwind%2FCoolector.Api/requests"
+          "url": "https://api.travis-ci.org/repo/noordwind%2FCollectively.Api/requests"
         },
         {
           "name": "Build Mailing Service",
-          "url": "https://api.travis-ci.org/repo/noordwind%2FCoolector.Services.Mailing/requests"
+          "url": "https://api.travis-ci.org/repo/noordwind%2FCollectively.Services.Mailing/requests"
         },
         {
           "name": "Build Operations Service",
-          "url": "https://api.travis-ci.org/repo/noordwind%2FCoolector.Services.Operations/requests"
+          "url": "https://api.travis-ci.org/repo/noordwind%2FCollectively.Services.Operations/requests"
         },
         {
           "name": "Build Remarks Service",
-          "url": "https://api.travis-ci.org/repo/noordwind%2FCoolector.Services.Remarks/requests"
+          "url": "https://api.travis-ci.org/repo/noordwind%2FCollectively.Services.Remarks/requests"
         },
         {
           "name": "Build SignalR Service",
-          "url": "https://api.travis-ci.org/repo/noordwind%2FCoolector.Services.SignalR/requests"
+          "url": "https://api.travis-ci.org/repo/noordwind%2FCollectively.Services.SignalR/requests"
         },
         {
           "name": "Build Statistics Service",
-          "url": "https://api.travis-ci.org/repo/noordwind%2FCoolector.Services.Statistics/requests"
+          "url": "https://api.travis-ci.org/repo/noordwind%2FCollectively.Services.Statistics/requests"
         },
         {
           "name": "Build Storage Service",
-          "url": "https://api.travis-ci.org/repo/noordwind%2FCoolector.Services.Storage/requests"
+          "url": "https://api.travis-ci.org/repo/noordwind%2FCollectively.Services.Storage/requests"
         },
         {
           "name": "Build Users Service",
-          "url": "https://api.travis-ci.org/repo/noordwind%2FCoolector.Services.Users/requests"
+          "url": "https://api.travis-ci.org/repo/noordwind%2FCollectively.Services.Users/requests"
         }
       ],
       "triggers": [{
@@ -169,61 +169,61 @@
           "rules": {
             "common": {
               "payload.packageIdentifier": {
-                "value": "Coolector.Common",
+                "value": "Collectively.Common",
                 "comparison": "equals"
               },
               "payload.feedIdentifier": {
-                "value": "coolector-dev",
+                "value": "collectively-dev",
                 "comparison": "equals"
               }
             },
             "mailing-service": {
               "payload.packageIdentifier": {
-                "value": "Coolector.Services.Mailing.Shared",
+                "value": "Collectively.Services.Mailing.Shared",
                 "comparison": "equals"
               },
               "payload.feedIdentifier": {
-                "value": "coolector-dev",
+                "value": "collectively-dev",
                 "comparison": "equals"
               }
             },
             "operations-service": {
               "payload.packageIdentifier": {
-                "value": "Coolector.Services.Operations.Shared",
+                "value": "Collectively.Services.Operations.Shared",
                 "comparison": "equals"
               },
               "payload.feedIdentifier": {
-                "value": "coolector-dev",
+                "value": "collectively-dev",
                 "comparison": "equals"
               }
             },
             "remarks-service": {
               "payload.packageIdentifier": {
-                "value": "Coolector.Services.Remarks.Shared",
+                "value": "Collectively.Services.Remarks.Shared",
                 "comparison": "equals"
               },
               "payload.feedIdentifier": {
-                "value": "coolector-dev",
+                "value": "collectively-dev",
                 "comparison": "equals"
               }
             },
             "statistics-service": {
               "payload.packageIdentifier": {
-                "value": "Coolector.Services.Statistics.Shared",
+                "value": "Collectively.Services.Statistics.Shared",
                 "comparison": "equals"
               },
               "payload.feedIdentifier": {
-                "value": "coolector-dev",
+                "value": "collectively-dev",
                 "comparison": "equals"
               }
             },          
             "users-service": {
               "payload.packageIdentifier": {
-                "value": "Coolector.Services.Users.Shared",
+                "value": "Collectively.Services.Users.Shared",
                 "comparison": "equals"
               },
               "payload.feedIdentifier": {
-                "value": "coolector-dev",
+                "value": "collectively-dev",
                 "comparison": "equals"
               }
             } 
