@@ -7,7 +7,6 @@ using RawRabbit.Configuration;
 using Collectively.Common.Extensions;
 using Collectively.Common.Mongo;
 using Collectively.Common.Nancy;
-using Nancy.Serialization.JsonNet;
 using Collectively.Common.Exceptionless;
 using Collectively.Common.RabbitMq;
 using Collectively.Common.Security;
