@@ -1,12 +1,13 @@
 using Autofac;
 using Microsoft.Extensions.Configuration;
 using Nancy.Bootstrapper;
+using Nancy.Bootstrappers.Autofac;
 using NLog;
 using RawRabbit.Configuration;
 using Collectively.Common.Extensions;
 using Collectively.Common.Mongo;
 using Collectively.Common.Nancy;
-using Collectively.Common.Nancy.Serialization;
+using Nancy.Serialization.JsonNet;
 using Collectively.Common.Exceptionless;
 using Collectively.Common.RabbitMq;
 using Collectively.Common.Security;
