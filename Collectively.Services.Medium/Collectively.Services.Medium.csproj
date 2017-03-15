@@ -23,10 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="../../Collectively.Common/Collectively.Common/Collectively.Common.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <PackageReference Include="Collectively.Common" Version="1.0.*" />
     <PackageReference Include="Medium" Version="1.0.0-beta-1" />
     <PackageReference Include="Medium.Integrations.AspNetCore" Version="1.0.0-beta-1" />
     <PackageReference Include="Medium.Integrations.Lockbox" Version="1.0.0-beta-1" />
