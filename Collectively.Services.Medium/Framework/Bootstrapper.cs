@@ -5,7 +5,6 @@ using Nancy.Bootstrappers.Autofac;
 using NLog;
 using RawRabbit.Configuration;
 using Collectively.Common.Extensions;
-using Collectively.Common.Mongo;
 using Collectively.Common.Nancy;
 using Collectively.Common.Exceptionless;
 using Collectively.Common.RabbitMq;
@@ -41,6 +40,7 @@ namespace Collectively.Services.Medium.Framework
                 builder.RegisterType<CustomJsonSerializer>().As<JsonSerializer>().SingleInstance();
                 builder.RegisterInstance(_configuration.GetSettings<ExceptionlessSettings>()).SingleInstance();
                 builder.RegisterType<ExceptionlessExceptionHandler>().As<IExceptionHandler>().SingleInstance();
+                RabbitMqContainer.Register(builder, _configuration.GetSettings<RawRabbitConfiguration>());
                 SecurityContainer.Register(builder, _configuration);
             });
             LifetimeScope = container;
