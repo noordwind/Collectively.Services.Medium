@@ -59,7 +59,6 @@ namespace Collectively.Services.Medium.Framework
 
         protected override void ApplicationStartup(ILifetimeScope container, IPipelines pipelines)
         {
-            databaseInitializer.InitializeAsync();
             pipelines.AfterRequest += (ctx) =>
             {
                 ctx.Response.Headers.Add("Access-Control-Allow-Origin", "*");
