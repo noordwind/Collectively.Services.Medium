@@ -39,13 +39,9 @@ namespace Collectively.Services.Medium.Framework
             {
                 builder.Populate(_services);
                 builder.RegisterType<CustomJsonSerializer>().As<JsonSerializer>().SingleInstance();
-                builder.RegisterInstance(_configuration.GetSettings<MongoDbSettings>()).SingleInstance();
-                builder.RegisterModule<MongoDbModule>();
-                builder.RegisterType<MongoDbInitializer>().As<IDatabaseInitializer>();
                 builder.RegisterInstance(_configuration.GetSettings<ExceptionlessSettings>()).SingleInstance();
                 builder.RegisterType<ExceptionlessExceptionHandler>().As<IExceptionHandler>().SingleInstance();
                 SecurityContainer.Register(builder, _configuration);
-                RabbitMqContainer.Register(builder, _configuration.GetSettings<RawRabbitConfiguration>());
             });
             LifetimeScope = container;
         }
@@ -63,8 +59,6 @@ namespace Collectively.Services.Medium.Framework
 
         protected override void ApplicationStartup(ILifetimeScope container, IPipelines pipelines)
         {
-            var databaseSettings = container.Resolve<MongoDbSettings>();
-            var databaseInitializer = container.Resolve<IDatabaseInitializer>();
             databaseInitializer.InitializeAsync();
             pipelines.AfterRequest += (ctx) =>
             {
