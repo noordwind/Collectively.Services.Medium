@@ -1,2 +1,2 @@
 #!/bin/bash
-dotnet publish ./src/Collectively.Services.Mailing -c Release -o ./bin/Docker
+dotnet publish ./src/Collectively.Services.Medium -c Release -o ./bin/Docker
