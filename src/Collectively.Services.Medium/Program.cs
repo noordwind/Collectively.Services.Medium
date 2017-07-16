@@ -8,7 +8,7 @@ namespace Collectively.Services.Medium
         public static void Main(string[] args)
         {
             WebServiceHost
-                .Create<Startup>(port: 11100)
+                .Create<Startup>()
                 .UseAutofac(Bootstrapper.LifetimeScope)
                 .UseRabbitMq(queueName: typeof(Program).Namespace)
                 .Build()
