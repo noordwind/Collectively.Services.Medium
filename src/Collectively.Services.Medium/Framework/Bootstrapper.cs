@@ -40,7 +40,7 @@ namespace Collectively.Services.Medium.Framework
                 builder.RegisterType<CustomJsonSerializer>().As<JsonSerializer>().SingleInstance();
                 builder.RegisterInstance(_configuration.GetSettings<ExceptionlessSettings>()).SingleInstance();
                 builder.RegisterType<ExceptionlessExceptionHandler>().As<IExceptionHandler>().SingleInstance();
-                RabbitMqContainer.Register(builder, _configuration.GetSettings<RawRabbitConfiguration>());
+                //RabbitMqContainer.Register(builder, _configuration.GetSettings<RawRabbitConfiguration>());
                 SecurityContainer.Register(builder, _configuration);
             });
             LifetimeScope = container;
