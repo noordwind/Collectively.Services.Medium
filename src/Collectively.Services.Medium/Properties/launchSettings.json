@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Collectively.Services.Medium": {
+      "commandName": "Project",
+      "applicationUrl": "http://localhost:11000"
+    }
+  }
+}
