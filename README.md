@@ -43,13 +43,13 @@ In order to run the **Collectively.Services.Medium** you need to have installed:
 - [MongoDB](https://www.mongodb.com)
 - [RabbitMQ](https://www.rabbitmq.com)
 
-Clone the repository and start the application via *dotnet run* command:
+Clone the repository and start the application via *dotnet run --no-restore* command:
 
 ```
 git clone https://github.com/noordwind/Collectively.Services.Medium
 cd Collectively.Services.Medium/Collectively.Services.Medium
 dotnet restore --source https://api.nuget.org/v3/index.json --source https://www.myget.org/F/collectively/api/v3/index.json --no-cache
-dotnet run --urls "http://*:11000"
+dotnet run --no-restore --urls "http://*:11000"
 ```
 
 Once executed, you shall be able to access the service at [http://localhost:11000](http://localhost:11000)
@@ -71,5 +71,5 @@ For the local testing purposes the *.local* or *.docker* configuration files are
 
 **Solution structure**
 ----------------
-- **Collectively.Services.Medium** - core and executable project via *dotnet run* command.
-- **Collectively.Services.Medium.Tests** - unit & integration tests executable via *dotnet test* command.
+- **Collectively.Services.Medium** - core and executable project via *dotnet run --no-restore* command.
+- **Collectively.Services.Medium.Tests** - unit & integration tests executable via *dotnet test --no-restore* command.
