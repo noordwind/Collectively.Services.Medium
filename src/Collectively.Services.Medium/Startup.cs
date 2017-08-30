@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Collectively.Services.Medium.Framework;
+using Collectively.Common.Logging;
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
 using Lockbox.Client.Extensions;
@@ -12,8 +13,6 @@ using Microsoft.Extensions.Logging;
 using Medium;
 using Medium.Integrations.AspNetCore;
 using Nancy.Owin;
-using NLog.Extensions.Logging;
-using NLog.Web;
 using Medium.Integrations.Lockbox;
 
 namespace Collectively.Services.Medium
@@ -42,6 +41,7 @@ namespace Collectively.Services.Medium
 
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
+            services.AddSerilog(Configuration);
             services.AddMedium()
                     .AddInMemoryRepository();
 
@@ -54,9 +54,7 @@ namespace Collectively.Services.Medium
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
-            loggerFactory.AddNLog();
-            app.AddNLogWeb();
-            env.ConfigureNLog("nlog.config");
+            app.UseSerilog(loggerFactory);
             if (env.IsProduction() || env.IsDevelopment())
             {
                 app.UseMedium(x => x.SettingsLoader = new LockboxMediumSettingsLoader(entryKey: "medium"));

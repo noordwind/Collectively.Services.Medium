@@ -2,7 +2,7 @@ using Autofac;
 using Microsoft.Extensions.Configuration;
 using Nancy.Bootstrapper;
 using Nancy.Bootstrappers.Autofac;
-using NLog;
+using Serilog;
 using RawRabbit.Configuration;
 using Collectively.Common.Extensions;
 using Collectively.Common.Nancy;
@@ -19,7 +19,7 @@ namespace Collectively.Services.Medium.Framework
 {
     public class Bootstrapper : AutofacNancyBootstrapper
     {
-        private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
+        private static readonly ILogger Logger = Log.Logger;
         private static IExceptionHandler _exceptionHandler;
         private readonly IConfiguration _configuration;
         private readonly IServiceCollection _services;
@@ -66,7 +66,7 @@ namespace Collectively.Services.Medium.Framework
             };
             pipelines.SetupTokenAuthentication(container);
             _exceptionHandler = container.Resolve<IExceptionHandler>();
-            Logger.Info("Collectively.Services.Medium API has started.");
+            Logger.Information("Collectively.Services.Medium API has started.");
         }
     }
 }
