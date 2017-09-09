@@ -23,20 +23,9 @@ namespace Collectively.Services.Medium
         public IContainer ApplicationContainer { get; set; }
         public IServiceCollection Services { get; set; }
 
-        public Startup(IHostingEnvironment env)
+        public Startup(IConfiguration configuration)
         {
-            var builder = new ConfigurationBuilder()
-                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
-                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
-                .AddEnvironmentVariables()
-                .SetBasePath(env.ContentRootPath);
-
-            if (env.IsProduction() || env.IsDevelopment())
-            {
-                builder.AddLockbox();
-            }
-
-            Configuration = builder.Build();
+            Configuration = configuration;
         }
 
         public IServiceProvider ConfigureServices(IServiceCollection services)
