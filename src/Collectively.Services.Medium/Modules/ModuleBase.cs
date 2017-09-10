@@ -1,6 +1,6 @@
 using AutoMapper;
 using Nancy.Security;
-using Collectively.Common.Nancy;
+using Collectively.Common.NancyFx;
 
 namespace Collectively.Services.Medium.Modules
 {
